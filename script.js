@@ -6,5 +6,5 @@ document.getElementById('whatsappImage').addEventListener('click', function() {
     var whatsappURL = `https://api.whatsapp.com/send?phone=916351050448&text=Hello!%20sir%20i%20need%20id${phoneNumber}`;
     
     // Open the WhatsApp DM
-    window.open(whatsappURL, '_blank');
+    window.open(whatsappURL, '_ablank');
 });
