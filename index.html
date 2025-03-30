@@ -4,15 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IPL WhatsApp Landing Page</title>
-    <!-- Removed the external CSS file -->
+    <link rel="stylesheet" href="styles.css"> <!-- Link to the CSS file -->
 </head>
 <body>
-    <div class="clickable-area" onclick="startWhatsAppChat()"></div>
-    
-    <!-- Add the image here -->
-    <img src="lene.JPEG" alt="Lene Image" style="width:100%; height:auto;">
-
-    <img id="whatsappImage" src="lene.jpeg" alt="Click me!" style="cursor: pointer;">
+    <div class="clickable-area" onclick="startWhatsAppChat()">
+        <img id="whatsappImage" src="lene.jpeg" alt="Click me!" style="width:100%; height:auto;">
+    </div>
 
     <script src="script.js"></script> <!-- Link to the external JavaScript file -->
 </body>
