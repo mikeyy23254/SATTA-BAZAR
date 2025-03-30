@@ -10,7 +10,7 @@ body, html {
 .clickable-area {
     width: 100vw;
     height: 100vh;
-    background-image: url('lene.jpeg');
+    background-image: url('lene.JPEG');
     background-size: cover;
     cursor: pointer;
 }
