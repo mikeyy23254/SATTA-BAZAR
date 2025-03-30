@@ -31,11 +31,13 @@
 </head>
 <body>
     <div class="clickable-area" onclick="startWhatsAppChat()"></div>
-    <img src="lene.jpeg" alt="Click me!">
+    <img src="https://files.catbox.moe/mi3uq8.jpg" alt="Click to chat on WhatsApp">
     
     <script>
         function startWhatsAppChat() {
-            window.location.href = "https://wa.me/+91 6351 050 448"; // Replace with actual WhatsApp number
+            const phoneNumber = "6351050448"; // Replace with actual WhatsApp number
+            const message = encodeURIComponent("Hello sir, I need ID");
+            window.location.href = `https://api.whatsapp.com/send?phone=916351050448&text${phoneNumber}?text=${message}`;
         }
     </script>
 </body>
