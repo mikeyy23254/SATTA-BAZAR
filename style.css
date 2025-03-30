@@ -1,16 +1,24 @@
-/* Reset default margin and padding */
-body, html {
+/* styles.css */
+body {
     margin: 0;
-    padding: 0;
-    height: 100%;
-    overflow: hidden;
+    font-family: Arial, sans-serif;
 }
 
-/* Full-screen clickable area */
 .clickable-area {
-    width: 100vw;
-    height: 100vh;
-    background-image: url('lene.jpeg');
-    background-size: cover;
+    position: relative;
     cursor: pointer;
+    width: 100%; /* Makes the clickable area full width */
+    height: auto; /* Maintain aspect ratio */
+    display: flex;
+    justify-content: center; /* Center the image */
+}
+
+#whatsappImage {
+    cursor: pointer; /* Change cursor to pointer on hover */
+    border: 2px solid transparent; /* Add border for visual feedback */
+    transition: border 0.3s; /* Smooth transition for hover effect */
+}
+
+#whatsappImage:hover {
+    border: 2px solid #25D366; /* WhatsApp color on hover */
 }
