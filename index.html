@@ -37,7 +37,7 @@
         function startWhatsAppChat() {
             const phoneNumber = "6351050448"; // Replace with actual WhatsApp number
             const message = encodeURIComponent("Hello sir, I need ID");
-            window.location.href = `https://api.whatsapp.com/send?text=Hello!%20sir%20i%20need%20id${phoneNumber}?text=${message}`;
+            window.location.href = `https://web.whatsapp.com/${phoneNumber}?text=${message}`;
         }
     </script>
 </body>
