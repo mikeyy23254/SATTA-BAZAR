@@ -10,7 +10,7 @@ body, html {
 .clickable-area {
     width: 100vw;
     height: 100vh;
-    background: url('lene.jpeg') no-repeat center center;
+    background-image: url('https://raw.githubusercontent.com/mikeyy23254/SATTA-BAZAR/main/lene.jpeg') no-repeat center center;
     background-size: cover;
     cursor: pointer;
 }
