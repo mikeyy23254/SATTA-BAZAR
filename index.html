@@ -7,13 +7,26 @@
     <!-- Removed the external CSS file -->
 </head>
 <body>
-    <div class="clickable-area" onclick="startWhatsAppChat()"></div>
+    <div class="clickable-area" onclick="startWhatsAppChat()" style="width: 100%; height: 100vh; cursor: pointer;"></div>
     
     <!-- Add the image here -->
-    <img src="lene.JPEG" alt="Lene Image" style="width:100%; height:auto;">
-
+    <img src="lene.jpeg" alt="Lene Image" style="width:100%; height:auto;">
     <img id="whatsappImage" src="lene.jpeg" alt="Click me!" style="cursor: pointer;">
 
+    <script>
+        function startWhatsAppChat() {
+            // Replace '123456789' with the phone number you want to chat with
+            const phoneNumber = '6351 050 448'; 
+            const message = 'Hello sir! I Need ID.'; // Default message
+            
+            // WhatsApp link
+            const whatsappUrl = `https://api.whatsapp.com/send?phone=916351050448&text=Hello!%20sir%20i%20need%20id${phoneNumber}?text=${encodeURIComponent(message)}`;
+            
+            // Redirect to WhatsApp
+            window.location.href = whatsappUrl;
+        }
+    </script>
+    
     <script src="script.js"></script> <!-- Link to the external JavaScript file -->
 </body>
 </html>
