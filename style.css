@@ -1,0 +1,16 @@
+/* Reset default margin and padding */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+/* Full-screen clickable area */
+.clickable-area {
+    width: 100vw;
+    height: 100vh;
+    background: url('lene.jpeg') no-repeat center center;
+    background-size: cover;
+    cursor: pointer;
+}
