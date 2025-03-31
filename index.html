@@ -30,13 +30,15 @@
     </style>
 </head>
 <body>
+    <!-- Clickable Image -->
     <div class="clickable-area" onclick="startWhatsAppChat()"></div>
     <img src="https://files.catbox.moe/mi3uq8.jpg" alt="Click to chat on WhatsApp">
     
     <script>
         function startWhatsAppChat() {
-            const phoneNumber = "6351050448"; // Replace with actual WhatsApp number
-            window.location.href = `https://wa.me/916351050448?text=Hello%20sir,%20I%20need%20ID${phoneNumber}?text=${message}`;
+            const phoneNumber = "916351050448"; // WhatsApp number with country code
+            const message = encodeURIComponent("Hello Sir, I Need ID"); // Pre-filled message
+            window.location.href = `https://wa.me/916351050448${phoneNumber}?text=${message}`; // WhatsApp Chat URL
         }
     </script>
 </body>
